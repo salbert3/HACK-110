@@ -9,9 +9,6 @@ user_number: int = 0
 def index():
     return render_template('index.html')
 
-if __name__ == '__main__':
-    app.run(debug=True)
-
 @app.route('/quiz', methods=["GET", "POST"])
 def quiz():
     if request.method == "POST":
@@ -41,3 +38,6 @@ def all_results():
 @app.route('/user<usernumber>')
 def display_user(usernumber: str):
     return render_template('user.html', user=users[int(usernumber)])
+
+if __name__ == '__main__':
+    app.run(debug=True)
