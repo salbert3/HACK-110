@@ -2,24 +2,17 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Carolina Basketball</title>
+        <title>Major Planner</title>
         <link rel='stylesheet' href='/static/styles.css' />
 
     </head>
     <body>               
-        <p>UNC Basketball</p>
-        <p class='hello' id='world' >UNC Basketball</p>
+        <p class='hello' id='world' >Majors</p>
         <a href="/create-todo">take note of something!</a>
-        <p 
-        class="loser">Coach k's history of losing to UNC'
-    </p>
-        <img 
-        src="https://i.pinimg.com/736x/b1/1e/69/b11e6920e6e637eab7cae5ea6487ee6e--duke-game-duke-unc.jpg" 
-        alt="coach k closely resembles a rat">
     </body>
 </html>
 
-<form action="/comp_bs_drop.php">
+<form action="/fill-box.php">
     <label for="courses">Computer science BS:</label>
     <select name="courses" id="courses">
       <option value="COMP-210">COMP-210: Data Structures and Analysis</option>
@@ -43,7 +36,7 @@
     <p>Click the "Submit" button and the form-data will be sent to a page on the 
     server called "comp_bs_drop.php".</p>
 
-  <form action="/biostatistics_drop.php">
+  <form action="/fill-box.php">
     <label for="courses">Biostatistics BSPH:</label>
     <select name="courses" id="courses">
       <option value="SPHG-351">SPHG-351: Foundations of Public Health</option>
@@ -72,7 +65,7 @@
     <p>Click the "Submit" button and the form-data will be sent to a page on the 
     server called "biostatistics_drop.php".</p>
 
-  <form action="/comp_ba_drop.php">
+  <form action="/fill-box.php">
     <label for="courses">Computer Science BA:</label>
     <select name="courses" id="courses">
       <option value="COMP-210">COMP-210: Data Structures and Analysis</option>
@@ -92,7 +85,7 @@
   <p>Click the "Submit" button and the form-data will be sent to a page on the 
   server called "comp_ba_drop.php".</p>
 
-  <form action="/phys_ba_drop.php">
+  <form action="/fill-box.php">
     <label for="courses">Computational Physics BA:</label>
     <select name="courses" id="courses">
       <option value="MATH-231">MATH 231: Calculus of Functions of One Variable I</option>
