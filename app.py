@@ -1,13 +1,24 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, render_template_string, request
 from helpers import todo
 
 app: Flask = Flask(__name__)
 todo_list: list[todo] = []
 todo_count: int = 0
 
-@app.route("/")
+@app.route("/", methods=["GET", "POST"])
 def index():
+    if request.method == "POST":
+        variable = request.form["compbs"]
+        return render_template('success.html',variable=variable)
     return render_template('index.html')
+
+""" @app.route("/start", methods=["GET", "POST"])
+def start():
+    if request.method == "POST":
+        variable = request.form["compbs"]
+        return render_template('success.html',variable=variable)
+    return render_template('index.html') """
+
 
 @app.route('/create-todo', methods=["GET", "POST"])
 def create_todo():
