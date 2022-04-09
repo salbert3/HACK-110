@@ -1,0 +1,179 @@
+     <!DOCTYPE html>
+     <html lang="en">
+     <head>
+          <meta charset="UTF-8">
+          <title>Major Planner</title>
+          <link rel='stylesheet' href='/static/styles.css' />
+
+     </head>
+     <body>               
+          <p class='hello' id='world' >Majors</p>
+          <a href="/create-todo">take note of something!</a>
+     </body>
+     </html>
+
+     <form action="/fill-box.php">
+     <label for="compbs">Computer science BS:</label>
+     <select name="compbs" id="compbs">
+          <option value="COMP-210">COMP-210: Data Structures and Analysis</option>
+          <option value="COMP-211">COMP-211: Systems Fundamentals</option>
+          <option value="COMP-301">COMP-301: Foundations of Programming</option>
+          <option value="COMP-311">COMP-311: Computer Organization</option>
+          <option value="MATH-381 or COMP 283">MATH-381 or COMP-283</option>
+          <option value="COMP-455">COMP-455: Models of Languages and Computation</option>
+          <option value="COMP-550">COMP-550: Algorithms and Analysis</option>
+          <option value="COMP>420 Elective">COMP greater than 420 Elective</option>
+          <option value="MATH-231">MATH-231: Calculus of Functions of One Variable I</option>
+          <option value="MATH-232">MATH-232: Calculus of Functions of One Variable II</option>
+          <option value="MATH-233">MATH-233: Calculus of Functions of Several Variables</option>
+          <option value="MATH-557">MATH-557 or MATH-347</option>
+          <option value="STOR-435">STOR-435: Introduction to Probability</option>
+     </select>
+     <br><br>
+     <label for="days">Days of class:</label>
+     <select name="class" id="class">
+          <option value="Mondayl, Wednesday, Friday">Monday, Wednesday, Friday</option>
+          <option value="Tuesday, Thursday">Tuesday, Thursday</option>
+     </select>
+          <br><br>
+     <input type="submit" value="Submit">
+     </form>
+
+     <br></br>
+
+     <form action="/fill-box.php">
+     <label for="courses">Biostatistics BSPH:</label>
+     <select name="courses" id="courses">
+          <option value="SPHG-351">SPHG-351: Foundations of Public Health</option>
+          <option value="SPHG-352">SPHG-352: Public Health Systems and Solutions</option>
+          <option value="EPID-600">EPID-600: Principles of Epidemiology for Public Health</option>
+          <option value="BIOS-500H">BIOS-500H: Introduction to Biostatistics</option>
+          <option value="BIOS-511">BIOS-511: Introduction to Statistical Computing and Data Management</option>
+          <option value="BIOS-645">BIOS-645: Principles of Experimental Analysis</option>
+          <option value="BIOS-668">BIOS-688: Design of Public Health Studies</option>
+          <option value="BIOS-691">BIOS-691: Field Observations in Biostatistics</option>
+          <option value="BIOL-101">BIOL-101: Principles of Biology</option>
+          <option value="BIOL-101L">BIOL-101L: Introduction Biology Laboratory</option>
+          <option value="COMP 110 or COMP 116">COMP 110 or COMP 116</option>
+          <option value="MATH-231">MATH-231: Calculus of Functions of One Variable I</option>
+          <option value="MATH-232">MATH-232: Calculus of Functions of One Variable II</option>
+          <option value="MATH-233">MATH-233: Calculus of Functions of Several Variables</option>
+          <option value="BIOL-201 or BIOL-202">BIOL-201 or BIOL-202</option>
+          <option value="MATH-381 or STOR-215">MATH-381 or STOR-215</option>
+          <option value="MATH-347">MATH-347: Linear Algebra for Applications</option>
+          <option value="MATH-521 or MATH-528">MATH-521 or MATH-258</option>
+     </select>
+     <br><br>
+     <label for="days">Days of class:</label>
+     <select name="class" id="class">
+          <option value="Mondayl, Wednesday, Friday">Monday, Wednesday, Friday</option>
+          <option value="Tuesday, Thursday">Tuesday, Thursday</option>
+     </select>
+     <br><br>
+     <input type="submit" value="Submit">
+     </form>
+
+     <br></br>
+
+     <form action="/fill-box.php">
+     <label for="courses">Computer Science BA:</label>
+     <select name="courses" id="courses">
+          <option value="COMP-210">COMP-210: Data Structures and Analysis</option>
+          <option value="COMP-211">COMP-211: Systems Fundamentals</option>
+          <option value="COMP-301">COMP-301: Foundations of Programming</option>
+          <option value="COMP-311">COMP-311: Computer Organization</option>
+          <option value="MATH-381 or COMP 283">MATH-381 or COMP-283</option>
+          <option value="COMP>420 Elective">COMP greater than 420 Elective</option>
+          <option value="Additional Elective">Additional Elective</option>
+          <option value="MATH-231">MATH-231: Calculus of Functions of One Variable I</option>
+          <option value="STOR-155 or STOR-435 or PSYC-210">STOR-155 or STOR-435 or PSYC-210</option>
+     </select>
+     <br><br>
+     <label for="days">Days of class:</label>
+     <select name="class" id="class">
+          <option value="Mondayl, Wednesday, Friday">Monday, Wednesday, Friday</option>
+          <option value="Tuesday, Thursday">Tuesday, Thursday</option>
+     </select>
+          <br><br>
+     <input type="submit" value="Submit">
+     </form>
+     
+     <br></br>
+
+     <form action="/fill-box.php" method="post">
+     <label for="courses">Computational Physics BA:</label>
+     <select name="courses" id="courses">
+          <option value="MATH-231">MATH 231: Calculus of Functions of One Variable I</option>
+          <option value="COMP-110">COMP 110: Introduction to Programming and Data Science</option>
+          <option value="MATH-232">MATH 232: Calculus of Functions of One Variable II</option>
+          <option value="PHYS-118">PHYS 118: Introductory Calculus-based Mechanics and Relativity</option>
+          <option value="PHYS-119">PHYS 119: Introductory Calculus-based Electromagnetism and Quanta</option>
+          <option value="MATH-233">MATH 233: Calculus of Functions of Several Variables</option>
+          <option value="COMP-283">COMP 283 or MATH 381</option>
+          <option value="PHYS-281L">PHYS 281L: Experimental Techniques in Physics</option>
+          <option value="MATH-383">MATH 383: First Course in Differential Equations</option>
+          <option value="COMP-210">COMP 210: Data Structures and Analysis</option>
+          <option value="PHYS-211">PHYS 211 or PHYS 311</option>
+          <option value="PHYS-447">PHYS 447	Quantum Computing</option>
+          <option value="PHYS-421">PHYS 421	Introduction to Quantum Mechanics</option>
+          <option value="PHYS-332">PHYS 332	Numerical Techniques for the Sciences II</option>
+          <option value="PHYS-331">PHYS 331	Numerical Techniques for the Sciences I</option>
+     </select>
+
+     <br><br>
+     
+     <label for="days">Days of class:</label>
+     <select name="class" id="class">
+          <option value="Mondayl, Wednesday, Friday">Monday, Wednesday, Friday</option>
+          <option value="Tuesday, Thursday">Tuesday, Thursday</option>
+     </select>
+          <br><br>
+     <input type="submit" value="Submit">
+     </form>
+
+     <br></br>
+     
+
+     <html>
+     <meta charset="UTF-8">
+     <sub>Monday:</sub>
+     <link rel='stylesheet' href='/static/styles.css' />
+     </html>
+
+     <body>
+          {{variable}}
+     </body>
+
+
+     <p><html>
+     <meta charset="UTF-8">
+     <sub>Tuesday:</sub>
+     <link rel='stylesheet' href='/static/styles.css' />
+     </html>
+
+
+     <p> <html>
+     <meta charset="UTF-8">
+     <sub>Wednesday:</sub>
+     <link rel='stylesheet' href='/static/styles.css' />
+     </html>
+
+     <body>
+          {{variable}}
+     </body>
+
+     <p><html>
+     <meta charset="UTF-8">
+     <sub>Thursday:</sub>
+     <link rel='stylesheet' href='/static/styles.css' />
+     </html>
+
+     <p><html>
+     <meta charset="UTF-8">
+     <sub>Friday:</sub>
+     <link rel='stylesheet' href='/static/styles.css' />
+     </html>
+
+     <body>
+     {{ variable}}
+     </body>
