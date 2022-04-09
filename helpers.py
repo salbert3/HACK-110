@@ -1,21 +1,9 @@
-def find_house(animal: str) -> str:
-    if animal == 'eagle':
-        return 'Ravenclaw'
-    elif animal == 'lion':
-        return 'Gryffindor'
-    elif animal == 'badger':
-        return 'Hufflepuff'
-    else:
-        return 'Slytherin'
-
-class user:
+class todo:
     id: int
-    first_name: str
-    last_name: str
-    house: str
+    title: str
+    description: str
 
-    def __init__(self, id: int, fname: str, lname: str, house: str):
+    def __init__(self, id: int, title: str, description: str):
         self.id = id
-        self.first_name = fname
-        self.last_name = lname
-        self.house = house
+        self.title = title
+        self.description = description
