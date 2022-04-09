@@ -1,6 +1,4 @@
-from cProfile import label
 from flask import Flask, render_template, render_template_string, request
-from helpers import todo
 
 app: Flask = Flask(__name__)
 
