@@ -1,43 +1,37 @@
-from helpers import find_house, user
 from flask import Flask, render_template, request
+from helpers import todo
 
 app: Flask = Flask(__name__)
-users: list[user] = []
-user_number: int = 0
+todo_list: list[todo] = []
+todo_count: int = 0
 
 @app.route("/")
 def index():
     return render_template('index.html')
 
-@app.route('/quiz', methods=["GET", "POST"])
-def quiz():
+@app.route('/create-todo', methods=["GET", "POST"])
+def create_todo():
     if request.method == "POST":
-        global users
-        global user_number
+        global todo_list
+        global todo_count
 
-        fname: str = request.form['fname']
-        lname: str = request.form['lname']
-        animal: str = request.form['animal']
+        title: str = request.form['title']
+        description: str = request.form['description']
 
-        if fname == '' or lname == '':
-            return render_template("quiz.html")
+        if title == '':
+            return render_template("create-todo.html")
 
-        house: str = find_house(animal)
-        new_user: user = user(user_number, fname, lname, house)
-        users.append(new_user)
+        new_todo: todo = todo(todo_count, title, description)
+        todo_list.append(new_todo)
 
-        user_number += 1
+        todo_count += 1
 
-        return render_template("result.html", house=house)
-    return render_template("quiz.html")
+        return render_template("success.html", title=title, description=description)
+    return render_template("create-todo.html")
 
-@app.route('/all-results')
-def all_results():
-    return render_template('all-results.html', users=users)
-
-@app.route('/user<usernumber>')
-def display_user(usernumber: str):
-    return render_template('user.html', user=users[int(usernumber)])
+@app.route('/view-todo-list')
+def view_todo_list():
+    return render_template('view-list.html', todo_list=todo_list)
 
 if __name__ == '__main__':
     app.run(debug=True)
