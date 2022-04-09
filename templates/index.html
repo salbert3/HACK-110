@@ -12,9 +12,9 @@
     </body>
 </html>
 
-<form action="/fill-box.php">
-    <label for="courses">Computer science BS:</label>
-    <select name="courses" id="courses">
+<form method="POST">
+    <label for="compbs">Computer science BS:</label>
+    <select name="compbs" id="compbs">
       <option value="COMP-210">COMP-210: Data Structures and Analysis</option>
       <option value="COMP-211">COMP-211: Systems Fundamentals</option>
       <option value="COMP-301">COMP-301: Foundations of Programming</option>
@@ -37,12 +37,13 @@
     </select>
       <br><br>
     <input type="submit" value="Submit">
-
   </form>
 
-  <form action="/fill-box.php">
+<br></br>
+
+ <form action="/fill-box.php">
     <label for="courses">Biostatistics BSPH:</label>
-    <select name="courses" id="courses">
+    <select name="courses" id="bio">
       <option value="SPHG-351">SPHG-351: Foundations of Public Health</option>
       <option value="SPHG-352">SPHG-352: Public Health Systems and Solutions</option>
       <option value="EPID-600">EPID-600: Principles of Epidemiology for Public Health</option>
@@ -65,17 +66,18 @@
     <br><br>
     <label for="days">Days of class:</label>
     <select name="class" id="class">
-      <option value="Mondayl, Wednesday, Friday">Monday, Wednesday, Friday</option>
+      <option value="Monday, Wednesday, Friday">Monday, Wednesday, Friday</option>
       <option value="Tuesday, Thursday">Tuesday, Thursday</option>
     </select>
     <br><br>
     <input type="submit" value="Submit">
   </form>
 
+  <br></br>
 
   <form action="/fill-box.php">
     <label for="courses">Computer Science BA:</label>
-    <select name="courses" id="courses">
+    <select name="courses" id="compba">
       <option value="COMP-210">COMP-210: Data Structures and Analysis</option>
       <option value="COMP-211">COMP-211: Systems Fundamentals</option>
       <option value="COMP-301">COMP-301: Foundations of Programming</option>
@@ -96,10 +98,11 @@
     <input type="submit" value="Submit">
   </form>
   
+<br></br>
 
-  <form action="/fill-box.php">
+  <form  method="post">
     <label for="courses">Computational Physics BA:</label>
-    <select name="courses" id="courses">
+    <select name="courses" id="compphys">
       <option value="MATH-231">MATH 231: Calculus of Functions of One Variable I</option>
       <option value="COMP-110">COMP 110: Introduction to Programming and Data Science</option>
       <option value="MATH-232">MATH 232: Calculus of Functions of One Variable II</option>
@@ -116,7 +119,9 @@
       <option value="PHYS-332">PHYS 332	Numerical Techniques for the Sciences II</option>
       <option value="PHYS-331">PHYS 331	Numerical Techniques for the Sciences I</option>
     </select>
+
     <br><br>
+    
     <label for="days">Days of class:</label>
     <select name="class" id="class">
       <option value="Mondayl, Wednesday, Friday">Monday, Wednesday, Friday</option>
@@ -125,7 +130,8 @@
       <br><br>
     <input type="submit" value="Submit">
   </form>
-  
+
+  <br></br> 
 
  <html>
     <meta charset="UTF-8">
@@ -151,6 +157,7 @@
     <sub>Thursday:</sub>
     <link rel='stylesheet' href='/static/styles.css' />
   </html>
+  
 
 
 
